@@ -6,7 +6,7 @@ myip=$(curl -s https://api.ipify.org)
 
 sudo cat <<EOF > /var/www/html/index.html
 <html>
-<body bgcolor="black">
+<body bgcolor="grey">
 <h2>
 <font color="gold">Build by Power of Terraform </font><font color="red"> v1.3.*</font>
 <br>

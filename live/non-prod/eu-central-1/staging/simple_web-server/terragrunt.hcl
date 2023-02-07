@@ -23,5 +23,5 @@ include "envcommon" {
 }
 
 inputs = {
-  name = "staging"
+  instance_name = "staging"
 }
