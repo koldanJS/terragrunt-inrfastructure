@@ -1,5 +1,5 @@
 terraform {
-  source = "${include.envcommon.locals.base_source_url}?ref=v0.1.6"
+  source = "${include.envcommon.locals.base_source_url}?ref=v0.1.7"
 }
 
 include "root" {

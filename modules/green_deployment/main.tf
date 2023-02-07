@@ -81,7 +81,7 @@ resource "aws_autoscaling_group" "this" {
 }
 
 resource "aws_elb" "this" {
-  name = "${var.project_name} ELB"
+  name = "${var.project_name}-ELB"
   availability_zones = [data.aws_availability_zones.available.names[0], data.aws_availability_zones.available.names[1]]
   security_groups = [aws_security_group.this.id]
   listener {
@@ -98,7 +98,7 @@ resource "aws_elb" "this" {
     interval = 10
   }
   tags = {
-    Name = "${var.project_name} ELB"
+    Name = "${var.project_name}-ELB"
   }
 }
 
