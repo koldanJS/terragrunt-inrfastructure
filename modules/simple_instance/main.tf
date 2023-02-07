@@ -8,10 +8,6 @@ terraform {
   }
 }
 
-provider "aws" {
-  region = "eu-central-1"
-}
-
 resource "aws_eip" "web_ip" {
   instance = aws_instance.web.id
 }

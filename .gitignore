@@ -1,3 +1,6 @@
+# Terragrunt
+.terragrunt*
+
 # Terraform
 .terraform
 terraform.tfvars
