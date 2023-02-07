@@ -44,7 +44,7 @@ resource "aws_security_group" "this" {
 resource "aws_launch_configuration" "this" {
   name_prefix          = "${var.project_name}-Green-Deploy-LC"
   image_id      = data.aws_ami.amazonLinux2_latest.id
-  instance_type = ${var.instance_type}
+  instance_type = var.instance_type
   security_groups = [aws_security_group.this.id]
   user_data = file("user_data.sh")
 

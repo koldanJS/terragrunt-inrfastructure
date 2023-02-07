@@ -1,9 +1,9 @@
 # Terragrunt
-.terragrunt*
+*.terragrunt*
 
 # Terraform
-.terraform
-terraform.tfvars
+*.terraform
+*terraform.tfvars
 *.tfstate
 *.tfstate.backup
 
