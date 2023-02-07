@@ -6,6 +6,6 @@ output "latest_amazonLinux_ami_id" {
   value = data.aws_ami.amazonLinux2_latest.id
 }
 
-output "load_balancer_udl" {
+output "load_balancer_url" {
   value = aws_elb.this.dns_name
 }
